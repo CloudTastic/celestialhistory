@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: alice, alice, alice;
+  margin: 0;
+  background-color: #333333;
+}
+
+.row {  
+  display: flex;
+}
+
+.different-font {
+    font-family: Pacifico;
+}
+
+.collapsible {
+  background-color: #942020;
+  color: #6B0000;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #942020;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #942020;
+  color: #6B0000;
+}
+
+pre {
+  display: block;
+  font-family: alice;
+  white-space: pre;
+  margin: 1em 0;
+  line-height: 0.8;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+.row img {
+  position: relative;
+  top:5px;
+}
+
+.logo img {
+  float: left;
+  border-radius: 50%;
+}
+
+/* Chat Settings */
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #F8F8FF;
+  color: #FDD017;
+}
+
+.header h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.header iframe {
+  font-size: 40px;
+  text-align:left;
+}
+
+@keyframes fadeInNavbar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #EDEDED;
+  color: black;
+  text-align: center;
+  position: absolute; /* Change this from 'relative' to 'absolute' */
+  width: 100%; /* Take full width of the page */
+  top: 0px; /* Position at the top of the page */
+}
+
+.index-page .navbar {
+  overflow: hidden;
+  background-color: #EDEDED;
+  color: black;
+  opacity: 0;
+  animation: fadeInNavbar 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+}
+
+.navbar a.special-link {
+  display: block;
+  color: #00000;
+  background-color: #EDEDED;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  border-right: solid 1px #C0C0C0;
+  border-left: solid 1px #C0C0C0; 
+}
+
+.special-link.left {
+    float: left;
+  }
+
+  .special-link.right {
+    float: right;
+  }
+
+div.a {
+  text-indent: 1em;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #FF3C36;
+  background-color: #EDEDED;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  border-right: solid 1px #C0C0C0;
+  border-left: solid 1px #C0C0C0; 
+  margin: 0 10px; /* Adjust as needed */
+}
+
+.navbar a:hover {
+  background-color: #fadf73;
+  color: #8a6e01;
+  border-right:solid 1px #8a6e01;
+  border-left:solid 1px #8a6e01;
+}
+
+
+@keyframes fadeInMain {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.center-align {
+  text-align: center;
+}
+
+.h1 {
+  font-size: 35px;
+}
+
+.h2 {
+  font-size: 25px;
+}
+.h3 {
+  font-size: 15px;
+}
+
+/* change */
+
+
+.ruby {
+  box-sizing: border-box;
+  width: 100%; 
+  color: #6B0000;
+  padding: 20px;
+  background: #942020;
+  opacity: 0;
+  animation: fadeInMain 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.ruby a:link {
+  color: #f54949;
+  background-color: transparent;
+  text-decoration: none;
+}
+.ruby a:visited {
+  color: #f54949;
+  background-color: transparent;
+  text-decoration: none;
+}
+.ruby a:hover {
+  color: #DC143C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.ruby collapsible {
+  background-color: #942020;
+  color: #6B0000;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.ruby active, .collapsible:hover {
+  background-color: #942020;
+}
+
+.ruby content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #942020;
+  color: #6B0000;
+}
+
+.ruby i {
+  font-family:  Bebas Neue;
+}
+
+.emerald {
+  box-sizing: border-box;
+  width: 100%; 
+  color: #004F2D;
+  padding: 20px;
+  background: #6AA84F;
+  opacity: 0;
+  animation: fadeInMain 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.emerald a:link {
+  color: #FF2400;
+  background-color: transparent;
+  text-decoration: none;
+}
+.emerald a:visited {
+  color: #FF2400;
+  background-color: transparent;
+  text-decoration: none;
+}
+.emerald a:hover {
+  color: #DC143C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.diamond {
+  box-sizing: border-box;
+  width: 100%; 
+  color: #004F2D;
+  padding: 20px;
+  background: #B0C4DE;
+  opacity: 0;
+  animation: fadeInMain 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.diamond a:link {
+  color: #FF2400;
+  background-color: transparent;
+  text-decoration: none;
+}
+.diamond a:visited {
+  color: #FF2400;
+  background-color: transparent;
+  text-decoration: none;
+}
+.diamond a:hover {
+  color: #DC143C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.quartz {
+  box-sizing: border-box;
+  width: 100%; 
+  color: #705B57;
+  padding: 20px;
+  background: #D7CBC4;
+  opacity: 0;
+  animation: fadeInMain 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.quartz a:link {
+  color: #8C8175;
+  background-color: transparent;
+  text-decoration: none;
+}
+.quartz a:visited {
+  color: #8C8175;
+  background-color: transparent;
+  text-decoration: none;
+}
+.quartz a:hover {
+  color: #FFB3B3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popuptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 999; /* Set a higher z-index */
+  bottom: 100%; /* Adjust this value to position the popup as needed */
+  left: 50%;
+  margin-left: -60px; /* Half of the width to center the popup */
+}
+
+.popup:hover .popuptext {
+  visibility: visible;
+}
